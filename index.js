@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
       if (
         this.distance < this.effect.mouse.radius ||
-        this.distance < -1 * this.effect.mouse.radius
+        this.distance < -this.effect.mouse.radius
       ) {
         this.angle = Math.atan2(this.dy, this.dx);
         this.vx += this.force * Math.cos(this.angle);
