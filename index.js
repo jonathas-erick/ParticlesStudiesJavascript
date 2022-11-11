@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
       this.ease = 0.01;
     }
     invert() {
-      this.effect.mouse.radius *= -2;
+      this.effect.mouse.radius *= -1;
     }
     click() {
       this.vx += this.force * Math.cos(this.angle) * 100;
